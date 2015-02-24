@@ -2,7 +2,7 @@ package com.asdaa.testadvancedmod;
 
 import com.asdaa.testadvancedmod.proxy.CommonProxy;
 import com.asdaa.testadvancedmod.reference.Reference;
-import com.asdaa.testadvancedmod.utility.LogHelper;
+import com.asdaa.testadvancedmod.utility.Log;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -22,18 +22,18 @@ public class testadvancedmod {
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		proxy.preInit();
-		LogHelper.info("Pre Initialization Complete!");
+		Log.info("Pre Initialization Complete!");
 	}
 
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
 		proxy.init();
-		LogHelper.info("Initialization Complete!");
+		Log.info("Initialization Complete!");
 	}
 
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
 		proxy.postInit();
-		LogHelper.info("Post Initialization Complete!");
+		Log.info("Post Initialization Complete!");
 	}
 }

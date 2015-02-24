@@ -4,7 +4,7 @@ import com.asdaa.testadvancedmod.reference.Reference;
 import cpw.mods.fml.common.FMLLog;
 import org.apache.logging.log4j.Level;
 
-public class LogHelper {
+public class Log {
     public static void log(Level logLevel, Object object)
     {
         FMLLog.log(Reference.MOD_NAME, logLevel, String.valueOf(object));
